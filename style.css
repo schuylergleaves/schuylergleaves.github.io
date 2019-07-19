@@ -1,0 +1,35 @@
+.all-data {
+    margin-top: 250px;
+}
+
+.profile-pic {
+    height: 220px;
+    width: 220px;
+}
+
+.name {
+    font-size: 50px;
+    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+.description {
+    color: white;
+}
+
+.projects {
+    color: white;
+}
+
+i.social-icons {
+    color: white;
+    font-size: 24px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.icon-row {
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
