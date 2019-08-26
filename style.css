@@ -8,38 +8,38 @@ body {
     background-image: url('assets/background.jpg');
 }
 
-.content {
+#content {
     text-align: center;
     margin-top: 10%;
 }
 
-.profile-pic {
-    width: 260px;
-    height: 260px;
+#profile-pic {
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     border: solid white;
 }
 
-.name {
+#name {
     font-family: 'Montserrat';
     color: white;
-    font-size: 70px;
+    font-size: 56px;
     font-weight: 900px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.links-container {
+#links-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center; 
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .social-icons {
     color: white;
-    font-size: 60px !important;
+    font-size: 44px !important;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -52,7 +52,7 @@ body {
     text-decoration: none !important;
 }
 
-.resume-button {
+#resume-button {
     font-size: 25px;
     padding: 15px 30px;
     font-weight: 300;
@@ -64,6 +64,6 @@ body {
     cursor: pointer;
 }
 
-.resume-button:hover {
+#resume-button:hover {
     background-color: rgb(180, 180, 180);
 }
