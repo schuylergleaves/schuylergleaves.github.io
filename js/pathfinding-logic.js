@@ -115,6 +115,7 @@ function setCellSelectionCallbacks(){
 function setActiveAlgorithm(algorithm){ 
     activeAlgorithm = algorithm;
     document.getElementById('runAlgorithmButton').innerHTML = "Run " + activeAlgorithm;
+    console.log("Active Algo set to " + algorithm);
 }
 
 function runActiveAlgorithm(){
@@ -123,8 +124,10 @@ function runActiveAlgorithm(){
     switch(activeAlgorithm){
         case 'Breadth First Search':
             runBFS();
+            break;
         case 'Depth First Search':
             runDFS();
+            break;
         default:
             return;
     }   
