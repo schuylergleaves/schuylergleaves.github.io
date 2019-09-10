@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-    background-image: url('assets/background.jpg');
+    background-image: url('../assets/background.jpg');
 }
 
 #content {
@@ -66,4 +66,18 @@ body {
 
 #resume-button:hover {
     background-color: rgb(180, 180, 180);
+}
+
+#projects {
+    margin-top: 220px;
+}
+
+#projects-link {
+    color: white;
+    font-family: 'Montserrat';
+    text-decoration: none;
+}
+
+#projects-link:hover {
+    color: rgb(180, 180, 180);
 }

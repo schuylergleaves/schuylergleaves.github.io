@@ -1,0 +1,135 @@
+#navbar {
+    font-family: 'Montserrat';
+    background-color: #563d7c;
+}
+
+#navbarTitle {
+    font-size: 18px;
+    padding-left: 8px;
+}
+
+#navbarContent {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #ffe484 !important;
+}
+
+.btn {
+    margin-left: 15px;
+    margin-top: 2px;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: #ffe484;
+    border-color: #ffe484;
+}
+
+#mainContent {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+#cells td {
+    width: 5px;
+    height: 5px;
+    border: 1px solid black !important;
+}
+
+.path-start {
+    background-color: green;
+}
+
+.path-end {
+    background-color: red;
+}
+
+.unvisited {
+    background-color: white;
+}
+
+.path-traversal {
+    animation-name: pathTraversalAnimation;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: running; 
+}
+
+@keyframes pathTraversalAnimation {
+    0% {
+        transform: scale(.3);
+        background-color: #34eb8f;
+    }
+
+    50% {
+        transform: scale(1.2);
+        background-color: #34eb8f;
+    }
+
+    100% {
+        transform: scale(1.0);
+        background-color: #34eb8f;
+    }
+}
+
+.visited {
+    animation-name: visitedAnimation;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes visitedAnimation {
+    0% {
+        transform: scale(.3);
+        background-color: yellow;
+    }
+
+    50% {
+        transform: scale(1.2);
+        background-color: yellow;
+    }
+
+    100% {
+        transform: scale(1.0);
+        background-color: yellow;
+    }
+}
+
+.wall {
+    animation-name: wallAnimation;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes wallAnimation {
+    0% {
+        transform: scale(.3);
+        background-color: black;
+    }
+
+    50% {
+        transform: scale(1.2);
+        background-color: black;
+    }
+
+    100% {
+        transform: scale(1.0);
+        background-color: black;
+    }
+}
+
+
