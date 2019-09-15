@@ -1,5 +1,8 @@
+body {
+    font-family: 'Verdana' !important;
+}
+
 #navbar {
-    font-family: 'Montserrat';
     background-color: #563d7c;
 }
 

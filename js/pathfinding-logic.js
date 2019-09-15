@@ -325,8 +325,6 @@ async function runDFS(){
     }
 }
 
-
-/* Returns matrix representation of table cells */
 function getMatrixOfCells(){
     var tableElement = document.getElementById('cells');
     
