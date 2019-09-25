@@ -63,6 +63,23 @@ function clearCells(){
     }
 }
 
+function clearAlgorithm(){
+    //end the currently running algo (will stop the async func)
+    algorithmRunning = false;
+
+    var cellGrid = document.getElementById('cells')
+
+    for (let row of cellGrid.rows) 
+    {
+        for(let cell of row.cells) 
+        {
+            if (cell.className == "visited" || cell.className == "path-traversal"){
+                cell.className = "unvisited";
+            }
+        }
+    }
+}
+
 function setCellSelectionCallbacks(){
     var mouseDown = false;
     var latestUpdatedCell;
