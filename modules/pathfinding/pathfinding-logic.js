@@ -264,6 +264,10 @@ async function runDFS(){
         var curRow = currCell.parentElement.rowIndex;
         var curCol = currCell.cellIndex;
 
+        if(visited[curRow][curCol]){
+            continue;
+        }
+
         visited[curRow][curCol] = true;
 
         // check if we have found the goal node

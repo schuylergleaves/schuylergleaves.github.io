@@ -71,11 +71,15 @@ body {
     margin-top: 220px;
 }
 
-#projects-link {
+.projects-link {
     color: white;
     text-decoration: none;
 }
 
-#projects-link:hover {
+.projects-link:hover {
     color: rgb(180, 180, 180);
+}
+
+#self-driving {
+    margin-top: 5px;
 }
