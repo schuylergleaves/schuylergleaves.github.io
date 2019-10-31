@@ -288,12 +288,12 @@ async function runDFS(){
                 prev[curRow - 1][curCol] = [curRow, curCol]
             }
         }
-
-        if (curCol + 1 < NUM_COLS) {
-            var RIGHT_NEIGHBOR = cells[curRow][curCol + 1];
-            if(RIGHT_NEIGHBOR.className != "wall" && !visited[curRow][curCol + 1]){
-                stack.push(RIGHT_NEIGHBOR);
-                prev[curRow][curCol + 1] = [curRow, curCol]
+        
+        if (curCol - 1 >= 0) {
+            var LEFT_NEIGHBOR = cells[curRow][curCol - 1];
+            if(LEFT_NEIGHBOR.className != "wall" && !visited[curRow][curCol - 1]){
+                stack.push(LEFT_NEIGHBOR);
+                prev[curRow][curCol - 1] = [curRow, curCol]
             }
         }
 
@@ -305,11 +305,11 @@ async function runDFS(){
             }
         }
 
-        if (curCol - 1 >= 0) {
-            var LEFT_NEIGHBOR = cells[curRow][curCol - 1];
-            if(LEFT_NEIGHBOR.className != "wall" && !visited[curRow][curCol - 1]){
-                stack.push(LEFT_NEIGHBOR);
-                prev[curRow][curCol - 1] = [curRow, curCol]
+        if (curCol + 1 < NUM_COLS) {
+            var RIGHT_NEIGHBOR = cells[curRow][curCol + 1];
+            if(RIGHT_NEIGHBOR.className != "wall" && !visited[curRow][curCol + 1]){
+                stack.push(RIGHT_NEIGHBOR);
+                prev[curRow][curCol + 1] = [curRow, curCol]
             }
         }
 
