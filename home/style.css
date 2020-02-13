@@ -19,9 +19,15 @@ body {
     overflow: hidden; 
 }
 
+@keyframes slide-td {
+    from { background-position: 0 0; }
+    to { background-position: 1000px 1000px;}
+}
+
+
 #content {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 15em;
 }
 
 #profile-pic {
@@ -33,7 +39,7 @@ body {
 
 #name {
     color: white;
-    font-size: 56px;
+    font-size: 48px;
     font-weight: 900px;
     margin-top: 30px;
     margin-bottom: 20px;
