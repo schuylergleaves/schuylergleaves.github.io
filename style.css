@@ -1,29 +1,10 @@
-html, body {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    font-family: 'Verdana' !important;
+html { 
+    background: url('assets/background.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-
-body {
-    background-image: url('/assets/background.png');
-    background-size: 10%;
-    -webkit-animation: slide-td 20s linear infinite;
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 0; 
-    min-width: 100%; 
-    min-height: 100%;
-    overflow: hidden; 
-}
-
-@keyframes slide-td {
-    from { background-position: 0 0; }
-    to { background-position: 1000px 1000px;}
-}
-
 
 #content {
     text-align: center;
@@ -81,21 +62,4 @@ body {
 
 #resume-button:hover {
     background-color: rgb(180, 180, 180);
-}
-
-#projects {
-    margin-top: 220px;
-}
-
-.projects-link {
-    color: white;
-    text-decoration: none;
-}
-
-.projects-link:hover {
-    color: rgb(180, 180, 180);
-}
-
-#self-driving {
-    margin-top: 5px;
 }
